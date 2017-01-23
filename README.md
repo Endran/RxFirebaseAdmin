@@ -1,6 +1,7 @@
 [![Hex.pm](https://img.shields.io/hexpm/l/plug.svg)](http://www.apache.org/licenses/LICENSE-2.0) [![Platform](https://img.shields.io/badge/platform-android-green.svg)](http://developer.android.com/index.html)
 [![Build Status](https://travis-ci.org/Endran/RxFirebaseAdmin.svg?branch=master)](https://travis-ci.org/Endran/RxFirebaseAdmin)
-
+[![Coverage Status](https://coveralls.io/repos/github/Endran/RxFirebaseAdmin/badge.svg?branch=master)](https://coveralls.io/github/Endran/RxFirebaseAdmin?branch=master)
+[![](https://jitpack.io/v/endran/RxFirebaseAdmin.svg)](https://jitpack.io/#endran/RxFirebaseAdmin)
 # RxFirebaseAdmin
 
 RxJava wrapper on Google's [Firebase for Java Admin](https://firebase.google.com/docs/admin/setup) library. Based upon the 
