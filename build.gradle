@@ -17,18 +17,16 @@ allprojects {
 
     apply plugin: 'java'
     apply plugin: 'com.github.ben-manes.versions'
+    apply plugin: 'maven'
+
+    group = 'com.github.Endran'
 
     ext.assertJVersion = '3.6.1'
     ext.firebaseAdminVersion = '4.0.3'
-    ext.jacksonVersion = '2.8.5'
     ext.jMockitVersion = '1.29'
+    ext.mockitoVersion = '2.0.7-beta'
     ext.jUnitVersion = '4.12'
-    ext.kotlinVersion = '1.0.5-2'
-    ext.springVersion = '1.4.2.RELEASE'
-    ext.springOauthVersion = '2.0.12.RELEASE'
-    ext.swaggerVersion = '2.4.0'
     ext.rxJavaVersion = '1.2.3'
-    ext.rxKotlinVersion = '0.60.0'
 
     repositories {
         jcenter()
@@ -38,6 +36,9 @@ allprojects {
         testCompile "org.assertj:assertj-core:${assertJVersion}"
         testCompile "org.jmockit:jmockit:${jMockitVersion}"
         testCompile "junit:junit:${jUnitVersion}"
+        testCompile "org.mockito:mockito-core:${mockitoVersion}"
+        testCompile "io.reactivex:rxjava:${rxJavaVersion}"
+        testCompile "com.google.firebase:firebase-admin:${firebaseAdminVersion}"
     }
 }
 
