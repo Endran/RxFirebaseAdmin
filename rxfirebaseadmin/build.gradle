@@ -1,3 +1,15 @@
+plugins {
+    id 'jacoco'
+    id 'com.github.kt3k.coveralls' version '2.6.3'
+}
+
+jacocoTestReport {
+    reports {
+        xml.enabled = true
+        html.enabled = true
+    }
+}
+
 dependencies {
     compile "io.reactivex:rxjava:${rxJavaVersion}"
     compile "io.reactivex:rxkotlin:${rxKotlinVersion}"
