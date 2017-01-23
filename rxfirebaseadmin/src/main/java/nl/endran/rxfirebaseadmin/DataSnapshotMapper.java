@@ -1,6 +1,5 @@
 /*
  * Copyright 2017 David Hardy
- * Copyright 2016 renanferrari
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,11 +14,11 @@
  * limitations under the License.
  */
 
-package com.kelvinapps.rxfirebase;
+package nl.endran.rxfirebaseadmin;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.GenericTypeIndicator;
-import com.kelvinapps.rxfirebase.exceptions.RxFirebaseDataCastException;
+import nl.endran.rxfirebaseadmin.exceptions.RxFirebaseDataCastException;
 import rx.exceptions.Exceptions;
 import rx.functions.Func1;
 

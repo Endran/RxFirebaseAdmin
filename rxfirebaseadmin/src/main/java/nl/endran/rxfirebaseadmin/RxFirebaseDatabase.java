@@ -1,6 +1,5 @@
 /*
  * Copyright 2017 David Hardy
- * Copyright 2016 Nick Moskalenko
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,10 +14,10 @@
  * limitations under the License.
  */
 
-package com.kelvinapps.rxfirebase;
+package nl.endran.rxfirebaseadmin;
 
 import com.google.firebase.database.*;
-import com.kelvinapps.rxfirebase.exceptions.RxFirebaseDataException;
+import nl.endran.rxfirebaseadmin.exceptions.RxFirebaseDataException;
 import rx.Observable;
 import rx.Subscriber;
 import rx.functions.Action0;

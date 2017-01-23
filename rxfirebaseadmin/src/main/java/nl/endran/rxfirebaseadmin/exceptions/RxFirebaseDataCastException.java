@@ -1,6 +1,5 @@
 /*
  * Copyright 2017 David Hardy
- * Copyright 2016 Nick Moskalenko
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -15,26 +14,22 @@
  * limitations under the License.
  */
 
-package com.kelvinapps.rxfirebase.exceptions;
+package nl.endran.rxfirebaseadmin.exceptions;
 
-import com.google.firebase.database.DatabaseError;
+public class RxFirebaseDataCastException extends Exception {
 
-public class RxFirebaseDataException extends Exception {
-
-    protected DatabaseError error;
-
-    public RxFirebaseDataException(DatabaseError error) {
-        this.error = error;
+    public RxFirebaseDataCastException() {
     }
 
-    public DatabaseError getError() {
-        return error;
+    public RxFirebaseDataCastException(String detailMessage) {
+        super(detailMessage);
     }
 
-    @Override
-    public String toString() {
-        return "RxFirebaseDataException{" +
-                "error=" + error +
-                '}';
+    public RxFirebaseDataCastException(String detailMessage, Throwable throwable) {
+        super(detailMessage, throwable);
+    }
+
+    public RxFirebaseDataCastException(Throwable throwable) {
+        super(throwable);
     }
 }
