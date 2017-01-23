@@ -1,0 +1,35 @@
+# OS
+.DS_Store
+
+# IntelliJ
+*.iml
+**/.idea/**
+.editorconfig
+
+# Gradle
+.gradle
+
+# Web
+**/bower_components
+**/node_modules
+**/jspm_packages
+**/.tmp
+**/npm-debug.*
+link-checker-results.txt
+**/app/**/*.js
+**/*.js.map
+**/e2e/**/*.js
+**/e2e/**/*.js.map
+_test-output
+_temp
+frontend/dist/**
+
+# Android
+*.apk
+/local.properties
+**/build
+/captures
+output.json
+.externalNativeBuild
+
+# Misc

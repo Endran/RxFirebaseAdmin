@@ -1,0 +1,46 @@
+group 'nl.endran'
+version '0.1.0-SNAPSHOT' // This -SNAPSHOT should be dynamic
+
+buildscript {
+    ext.kotlinVersion = '1.0.5-2'
+    ext.springBootVersion = '1.4.2.RELEASE'
+
+    repositories {
+        jcenter()
+    }
+    dependencies {
+        classpath 'com.github.ben-manes:gradle-versions-plugin:0.13.0'
+    }
+}
+
+allprojects {
+
+    apply plugin: 'java'
+    apply plugin: 'com.github.ben-manes.versions'
+
+    ext.assertJVersion = '3.6.1'
+    ext.firebaseAdminVersion = '4.0.3'
+    ext.jacksonVersion = '2.8.5'
+    ext.jMockitVersion = '1.29'
+    ext.jUnitVersion = '4.12'
+    ext.kotlinVersion = '1.0.5-2'
+    ext.springVersion = '1.4.2.RELEASE'
+    ext.springOauthVersion = '2.0.12.RELEASE'
+    ext.swaggerVersion = '2.4.0'
+    ext.rxJavaVersion = '1.2.3'
+    ext.rxKotlinVersion = '0.60.0'
+
+    repositories {
+        jcenter()
+    }
+
+    dependencies {
+        testCompile "org.assertj:assertj-core:${assertJVersion}"
+        testCompile "org.jmockit:jmockit:${jMockitVersion}"
+        testCompile "junit:junit:${jUnitVersion}"
+    }
+}
+
+task wrapper(type: Wrapper) {
+    gradleVersion = '3.2.1'
+}
