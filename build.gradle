@@ -17,15 +17,12 @@ allprojects {
 
     apply plugin: 'java'
     apply plugin: 'com.github.ben-manes.versions'
-    apply plugin: 'maven'
-
-    group = 'com.github.Endran'
 
     ext.assertJVersion = '3.6.1'
     ext.firebaseAdminVersion = '4.0.3'
     ext.jMockitVersion = '1.29'
-    ext.mockitoVersion = '2.0.7-beta'
     ext.jUnitVersion = '4.12'
+    ext.mockitoVersion = '2.0.7-beta'
     ext.rxJavaVersion = '1.2.3'
 
     repositories {
