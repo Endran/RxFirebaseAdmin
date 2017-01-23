@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/Endran/RxFirebaseAdmin.svg?branch=master)](https://travis-ci.org/Endran/RxFirebaseAdmin)
+
 # RxFirebaseAdmin
 
 RxJava wrapper on Google's [Firebase for Java Admin](https://firebase.google.com/docs/admin/setup) library. Based upon the 
